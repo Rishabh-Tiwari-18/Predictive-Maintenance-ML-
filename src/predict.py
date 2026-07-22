@@ -3,6 +3,17 @@ import pandas as pd
 
 from pathlib import Path
 
+import traceback
+
+try:
+    import joblib
+except Exception:
+    raise Exception(traceback.format_exc())
+
+import pandas as pd
+
+from pathlib import Path
+
 from src.preprocessing import clean_column_names, scale_features
 from src.feature_engineering import create_features
 

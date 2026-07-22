@@ -17,7 +17,15 @@ sys.path.append(
 )
 
 
-from src.predict import predict_failure
+try:
+    from src.predict import predict_failure
+except Exception:
+    import traceback
+
+    st.error("Import Error")
+    st.code(traceback.format_exc())
+
+    st.stop()
 
 
 
