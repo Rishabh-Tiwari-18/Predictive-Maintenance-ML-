@@ -1,0 +1,83 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.conda/
+conda-env/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+
+# IDE / Editor
+
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+
+# Environment Variables
+
+.env
+.env.*
+
+
+# Data Files
+
+# Raw datasets
+data/raw/*
+
+# Processed datasets (optional)
+# Uncomment if datasets are large
+# data/processed/*
+
+*.csv
+*.xlsx
+*.xls
+
+
+# Machine Learning Models
+
+# Ignore large trained models
+# Uncomment if model files are large
+# models/*.pkl
+# models/*.joblib
+
+
+# Logs
+
+*.log
+
+
+# Python Packaging
+
+build/
+dist/
+*.egg-info/
+
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+
+# Temporary Files
+
+*.tmp
+*.temp
+*.swp
+
+
+# Streamlit
+
+.streamlit/secrets.toml
