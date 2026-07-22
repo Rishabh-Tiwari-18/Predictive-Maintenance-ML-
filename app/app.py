@@ -3,6 +3,18 @@ import pandas as pd
 import sys
 from pathlib import Path
 
+import sys
+import streamlit as st
+
+st.write("Python:", sys.version)
+
+try:
+    import joblib
+    st.success(f"joblib version: {joblib.__version__}")
+except Exception as e:
+    st.error(f"joblib import failed: {e}")
+    st.stop()
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
